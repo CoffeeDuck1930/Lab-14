@@ -8,12 +8,12 @@ class Task {
         return `
         <div class="tasks">
         <div class="quitTask">
-            <button class="elim" onclick="Quit(${pos})">X</button>
+            <button class="elim" onclick="Quit(${pos})"><i class="fa-solid fa-circle-xmark"></i></button>
         </div>
         <div class="task">
             <p class="text">${this.desc}</p>
-            <button class="minus" onclick="downgradeTask(${pos})">-</button>
-            <button class="plus" onclick="updateTask(${pos})">+</button>
+            <button class="minus" onclick="downgradeTask(${pos})"><i class="fa-sharp fa-solid fa-circle-minus"></i></button>
+            <button class="plus" onclick="updateTask(${pos})"><i class="fa-solid fa-circle-plus"></i></button>
         </div>
         </div>
         `
